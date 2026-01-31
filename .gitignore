@@ -1,0 +1,46 @@
+# ======================
+# GLOBAL
+# ======================
+.env
+.env.*
+secrets/
+
+# ======================
+# IDE
+# ======================
+.idea/
+.vscode/
+*.iml
+
+# ======================
+# OS
+# ======================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ======================
+# BACKEND (Spring Boot)
+# ======================
+LabourseSearhing/target/
+LabourseSearhing/*.log
+LabourseSearhing/src/main/resources/application*.yml
+LabourseSearhing/src/main/resources/application*.properties
+
+# ======================
+# FRONTEND WEB (React)
+# ======================
+frontend-web/node_modules/
+frontend-web/build/
+frontend-web/dist/
+frontend-web/.env*
+
+# ======================
+# FRONTEND MOBILE (React Native)
+# ======================
+frontend-mobile/node_modules/
+frontend-mobile/.env*
+frontend-mobile/android/.gradle/
+frontend-mobile/android/app/build/
+frontend-mobile/ios/Pods/
+frontend-mobile/ios/build/
