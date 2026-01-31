@@ -1,46 +1,98 @@
-# ======================
-# GLOBAL
-# ======================
+# ==================================================
+# GLOBAL SECURITY
+# ==================================================
 .env
 .env.*
+*.env
 secrets/
+credentials/
+*.key
+*.pem
 
-# ======================
-# IDE
-# ======================
+# ==================================================
+# IDE & EDITORS
+# ==================================================
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
 
-# ======================
-# OS
-# ======================
+# ==================================================
+# OS FILES
+# ==================================================
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ======================
-# BACKEND (Spring Boot)
-# ======================
+# ==================================================
+# LOGS & TEMP
+# ==================================================
+*.log
+logs/
+tmp/
+.cache/
+
+# ==================================================
+# ================= BACKEND =========================
+# ==================================================
+
+# Maven / Java
 LabourseSearhing/target/
 LabourseSearhing/*.log
+
+# Spring Boot configs (NEVER PUSH)
 LabourseSearhing/src/main/resources/application*.yml
 LabourseSearhing/src/main/resources/application*.properties
 
-# ======================
-# FRONTEND WEB (React)
-# ======================
-frontend-web/node_modules/
-frontend-web/build/
-frontend-web/dist/
-frontend-web/.env*
+# Exception: example files
+!LabourseSearhing/src/main/resources/application*.example.*
 
-# ======================
-# FRONTEND MOBILE (React Native)
-# ======================
+# Docker
+LabourseSearhing/.env
+LabourseSearhing/docker-compose.override.yml
+
+# ==================================================
+# ================= FRONTEND WEB ====================
+# ==================================================
+
+frontend-web/node_modules/
+frontend-web/dist/
+frontend-web/build/
+frontend-web/.env
+frontend-web/.env.*
+frontend-web/.cache/
+
+# ==================================================
+# =============== FRONTEND MOBILE ===================
+# ==================================================
+
 frontend-mobile/node_modules/
-frontend-mobile/.env*
+frontend-mobile/.env
+frontend-mobile/.env.*
+
+# Android
 frontend-mobile/android/.gradle/
 frontend-mobile/android/app/build/
+
+# iOS
 frontend-mobile/ios/Pods/
 frontend-mobile/ios/build/
+frontend-mobile/ios/.env*
+
+# Expo
+frontend-mobile/.expo/
+
+# ==================================================
+# ================== TESTING ========================
+# ==================================================
+coverage/
+*.lcov
+
+# ==================================================
+# ================== MISC ===========================
+# ==================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
