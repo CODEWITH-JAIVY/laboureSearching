@@ -130,4 +130,4 @@ Java · Spring Boot · Redis · Kafka · React · System Design
 
 ## 📄 License
 
-This project is intended for educational and demonstration purposes.
+This project is intended for educational , demonstration purposes and new startup project.
